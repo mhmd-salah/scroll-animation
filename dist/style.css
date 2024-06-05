@@ -1,3 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+.box{
+  background-color: royalblue;
+  width: 300px;
+  height: 150px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  position: relative;
+  transition: .3s;
+}
+.box:nth-of-type(even){
+  transform: translateX(-400%);
+}
 
-
-/*# sourceMappingURL=style.css.map */
+.box.show{
+  transform: translateX(0);
+}
