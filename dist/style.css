@@ -27,7 +27,7 @@ body {
   font-weight: bold;
 }
 .box:nth-of-type(even) {
-  transform: scale(0.3) translateX(-400%) skewY(30deg);
+  transform: scale(0.3) translateX(-400%) skewY(-30deg);
 }
 
 .box.show {
